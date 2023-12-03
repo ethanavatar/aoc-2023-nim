@@ -1,4 +1,4 @@
-proc fib(n: int): int {.noSideEffect.} =
+func fib(n: int): int =
     case n < 2:
     of true: n
     of false: fib(n - 1) + fib(n - 2)

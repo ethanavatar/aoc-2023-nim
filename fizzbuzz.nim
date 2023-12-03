@@ -1,4 +1,4 @@
-proc fizzbuzz(n: int): string {.noSideEffect.} =
+func fizzbuzz(n: int): string =
     case n mod 15:
     of 0: "FizzBuzz"
     of 3, 6, 9, 12: "Fizz"
